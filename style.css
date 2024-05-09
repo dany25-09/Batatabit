@@ -21,7 +21,8 @@
 
 * { /* Se refiere a todos los elementos del html*/
     box-sizing: border-box; /*incluir padding y border en el cálculo del tamaño total del elemento.*/
-
+    padding: 0;
+    margin: 0;
 }
 
 html { /*se refiere al elemento raíz <html>*/
@@ -39,10 +40,11 @@ header{
     width: 100%;
     min-width: 320px; /*320px es la dimensión más pequeñas de los celulares*/
     height: 334px; 
+    background: linear-gradient(208.83deg, var(--color-dark) 16.69%, var(--color-primary) 100%);
 }
 
 header img {
-    width: 150px;
+    width: 151px;
     height: 24px;
     margin-top: 60px;
     align-self: center; /*/* Centra horizontal (eje transversal) este elemento*/
@@ -54,7 +56,55 @@ header img {
     min-width: 288px;
     max-width: 900px;
     height: 218px;
-    margin-top: 40px;
+    margin-top: 50px;
     text-align: center;
     align-self: center;/
+}
+
+.header__title-container h1{
+    font-size: 2.2rem; /*24px*/
+    font-weight: bold;
+    line-height: 2.6rem; /*26px el espacio entre líneas*/
+    color: var(--color-light);
+}
+
+.header__title-container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--color-primary-soft);
+}
+
+.header__title-container .header__button{
+    position: absolute;
+    /* left: calc(50%-118px); Se va al centro con el 50% y se le resta -118px */
+    /*centrar el boton*/
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /**/
+    top: 270px;
+    display: block; /*Los elementos ocupan el 100% del ancho.*/
+    margin-top: 35px;
+    padding: 15px 0;
+    width: 229px;
+    height: 48px;
+    background-color: var(--color-background);
+    /*Sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-dark);
+}
+.header__button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/down-arrow.svg");
 }
