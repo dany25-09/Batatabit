@@ -158,7 +158,7 @@ main {
     color: #757575;
 }
 
-.main__tables-container__currency{
+.main__tables-container__currency, .main__tables-container__commissions{
     width: 70%;
     min-width: 235px;
     max-width: 500px;
@@ -189,13 +189,34 @@ main {
     height: 100%;
 }
 
-.main__tables-container__currency__table td{
+.main__tables-container__currency__table td, .main__tables-container__commissions__table{
     width: 50%;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
     color: var(--color-light-darker);
     background-color: var(--color-light);
+}
+
+.table__right .table__tr--below{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/trending-down.svg");
+    background-size: cover; /*ajusta el tamaño de la imagen para cubrir completamente el área del elemento contenedor*/
+    background-position: center; /*posiciona la imagen de en el centro del elemento contenedor.*/
+}
+
+.table__right .table__tr--above{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/trending-up.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .main__tables-container__currency__table .table__tr--top-left{
@@ -212,4 +233,73 @@ main {
 
 .main__tables-container__currency__table .table__tr--bottom-right{
     border-radius: 0 0 15px 0;
+}
+
+.main__tables-container__currency__date{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--color-primary-soft);
+    border-radius: 8px;
+}
+
+.main__tables-container__currency__date p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--color-dark-warm);
+}
+
+
+.main__tables-container__commissions .main__tables-container__commisions__tittle{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--color-secondary);
+}
+
+.main__tables-container__commissions__table{
+    /* background-color: #f7931a; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(4, 1fr);
+
+    border-radius: 15px; /* Bordes redondeados */
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.main__tables-container__commissions__table span {
+    /* Centra vertical y horizontalmente el contenido */
+    display: flex;
+    justify-content: center; /*eje horizontal*/
+    align-items: center; /*eje vertical*/
+}
+
+.main__tables-container__commissions__table .commisions__table-col-1{
+    border-bottom: 3px solid var(--color-background); /* Borde inferior de las celdas */
+    border-right: 3px solid var(--color-background); /* Borde derecho de las celdas */
+}
+
+.main__tables-container__commissions__table .commisions__table-col-2{
+    border-bottom: 3px solid var(--color-background); /* Borde inferior de las celdas */
+}
+
+.main__tables-container__commissions__table .commisions__table-col-1-end{
+    border-right: 3px solid var(--color-background); /* Borde derecho de las celdas */
+}
+
+.main__tables-container__commisions__date{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--color-secondary-soft);
+    border-radius: 8px;
 }
