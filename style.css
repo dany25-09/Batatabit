@@ -349,3 +349,56 @@ main {
     line-height: 1.8rem;
     color: #808080;
 }
+
+.main__product__cards-container__product-detail-card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--color-dark);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.main__product__cards-container__product-detail-card__icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main__product__cards-container__product-detail-card .clock{
+    background-image: url("./assets/icons/clock.svg");
+}
+
+.main__product__cards-container__product-detail-card .eye{
+    background-image: url("./assets/icons/eye.svg");
+}
+
+.main__product__cards-container__product-detail-card .dollar-sign{
+    background-image: url("./assets/icons/dollar-sign.svg");
+}
+
+.main__product__cards-container__product-detail-card .check-circle{
+    background-image: url("./assets/icons/check-circle.svg");
+}
+
+.main__product__cards-container__product-detail-card-title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--color-light);
+}
+
+.main__product__cards-container__product-detail-card-body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
