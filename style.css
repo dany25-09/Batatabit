@@ -209,7 +209,7 @@ main {
 }
 
 .table__right .table__tr--above{
-    display: inline-block;
+    /* display: inline-block; */
     width: 15px;
     height: 15px;
     margin-left: 10px;
