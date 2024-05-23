@@ -422,3 +422,35 @@ main {
     color: var(--color-light);
     
 }
+
+
+.main__plans_container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center
+}
+
+.main__plans_container__title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.main__plans_container__title h2{
+    padding-top: 50px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--color-dark);
+}
+
+.main__plans_container__title p{
+    padding-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
