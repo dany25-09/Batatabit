@@ -454,3 +454,61 @@ main {
     line-height: 1.8rem;
     color: #757575;
 }
+
+.main__plans_container__slider__card{
+    position: relative;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--color-light);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.main__plans_container__slider__card-recommended{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    /*centrar el logo*/
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.2rem;
+    padding: 6px;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    color: var(--color-light);
+}
+
+.main__plans_container__slider__card__plan-info-container__title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.main__plans_container__slider__card__plan-info-container__price{
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+}
+
+.main__plans_container__slider__card__plan-info-container__price span{
+    margin-right: 2px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: 25px;
+}
+
+.main__plans_container__slider__card__plan-info-container__saving{
+    font-size: 1.2rem;
+    color: #757575;
+}
