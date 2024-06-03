@@ -468,9 +468,9 @@ main {
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
 
-.main__plans_container__slider__card-recommended{
+.main__plans_container__slider__card__type {
     position: absolute;
-    width: 120px;
+    width: 100px;
     height: 31px;
     top: -15px;
     /*centrar el logo*/
@@ -511,4 +511,56 @@ main {
 .main__plans_container__slider__card__plan-info-container__saving{
     font-size: 1.2rem;
     color: #757575;
+}
+
+.main__plans_container__slider__card__plan-info-container__ca{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--color-background);
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--color-dark);
+    
+}
+
+.main__plans_container__slider__card__plan-info-container__ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("./assets/icons/orange-right-arrow.svg");
+    vertical-align: text-bottom;
+}
+
+/* Segunda tarjeta  */
+
+.main__plans_container__slider__card__type.basic {
+    background-color: var(--color-secondary);
+}
+
+/* Tercera tarjeta */
+
+.main__plans_container__slider__card.limited {
+    background-color: var(--color-dark-warm);
+}
+
+.main__plans_container__slider__card__type.limited {
+    background-color: var(--color-light-darker);
+}
+
+.main__plans_container__slider__card__plan-info-container__title.limited {
+    color: var(--color-light);
+}
+
+.main__plans_container__slider__card__plan-info-container__price.limited {
+    color: var(--color-light);
+}
+
+.main__plans_container__slider__card__plan-info-container__ca.limited {
+    background-color: var(--color-dark-warm);
+    color: var(--color-light);
 }
