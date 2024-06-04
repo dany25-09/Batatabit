@@ -158,12 +158,22 @@ main {
     color: #757575;
 }
 
+
+.main__tables-container{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+
 .main__tables-container__currency, .main__tables-container__commissions{
     width: 70%;
     min-width: 235px;
     max-width: 500px;
+    scroll-snap-align: center;
+    margin: 0px 30px;
     height: 360px;
-    margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
 
