@@ -62,7 +62,7 @@ header img {
 }
 
 .header__title-container h1{
-    font-size: 2.2rem; /*24px*/
+    font-size: 2.2rem; /*22px*/
     font-weight: bold;
     line-height: 2.6rem; /*26px el espacio entre líneas*/
     color: var(--color-light);
@@ -172,7 +172,7 @@ main {
     min-width: 235px;
     max-width: 500px;
     scroll-snap-align: center;
-    margin: 0px 30px;
+    margin: 0px 40px;
     height: 360px;
     font-family: "Inter", sans-serif;
 }
@@ -416,7 +416,7 @@ main {
 .main__bitcoin-img-container{
     width: 100%;
     min-width: 320px;
-    height: 50vh;
+    height: 20vh;
     background-image: url("./assets/img/bitcoinbaby1-2x.png");
     background-size: cover;
     background-position: center;
@@ -480,7 +480,7 @@ main {
     min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px 10px 0;
+    margin: 50px 25px 0;
     padding: 0 15px;
     background-color: var(--color-light);
     border-radius: 15px;

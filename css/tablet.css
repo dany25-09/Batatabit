@@ -1,6 +1,7 @@
 .main__tables-container{
     margin: 0 auto;
-    width: 930px;   
+    width: 930px;
+    overflow-x: auto;   
 }
 
 .main__product__cards-container{
@@ -12,5 +13,6 @@
 
 .main__plans_container__slider{
     justify-content: center;
+    overflow-x: auto;
 }
 
