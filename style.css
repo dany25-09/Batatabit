@@ -31,7 +31,7 @@ html { /*se refiere al elemento raíz <html>*/
     font-family: "DM Sans", sans-serif;
 }
 
-header{
+.header{
     position: relative;
     display: flex;
     flex-direction: column; /*El eje principal ahora es vertical*/
@@ -43,7 +43,7 @@ header{
     background: linear-gradient(208.83deg, var(--color-dark) 16.69%, var(--color-primary) 100%);
 }
 
-header img {
+.header__img {
     width: 151px;
     height: 24px;
     margin-top: 60px;
@@ -51,7 +51,7 @@ header img {
 }
 
 
-.header__tittle-container {
+.header__text {
     width: 90%;
     min-width: 288px;
     max-width: 900px;
@@ -61,14 +61,14 @@ header img {
     align-self: center;/
 }
 
-.header__title-container h1{
+.header__title{
     font-size: 2.2rem; /*22px*/
     font-weight: bold;
     line-height: 2.6rem; /*26px el espacio entre líneas*/
     color: var(--color-light);
 }
 
-.header__title-container p{
+.header__paragraph{
     margin-top: 25px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -76,7 +76,7 @@ header img {
     color: var(--color-primary-soft);
 }
 
-.header__title-container .header__button{
+.header__text .header__link{
     position: absolute;
     /* left: calc(50%-118px); Se va al centro con el 50% y se le resta -118px */
     /*centrar el boton*/
@@ -101,7 +101,7 @@ header img {
     text-decoration: none;
     color: var(--color-dark);
 }
-.header__button span{
+.header__link span{
     display: inline-block;
     width: 13px;
     height: 8px;
@@ -109,14 +109,14 @@ header img {
     background-image: url("./assets/icons/down-arrow.svg");
 }
 
-main {
+.main {
     width: 100%;
     height: auto;
     min-width: 320px;
     background-color: var(--color-background);
 }
 
-.main__exchange-container{
+.main__exchange{
     width: 100%;
     height: auto;
     padding-top: 80px;
@@ -124,14 +124,7 @@ main {
     text-align: center;
 }
 
-.main__exchange-container__title{
-    width: 90%;
-    min-width: 288px;
-    max-width: 900px;
-    margin: 0 auto; /*Asegura que se centre*/
-}
-
-.main__exchange-container__img{
+.exchange__containerImg{
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -142,7 +135,14 @@ main {
     background-repeat: no-repeat;
 }
 
-.main__exchange-container__title h2{
+.exchange__containerTitle{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto; /*Asegura que se centre*/
+}
+
+.exchange__title{
     margin-bottom: 30px;
     font-size: 2.4rem;
     font-weight: bold;
@@ -150,7 +150,7 @@ main {
     color: var(--color-dark);
 }
 
-.main__exchange-container__title p{
+.exchange__paragraph{
     margin-bottom: 30px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -159,7 +159,7 @@ main {
 }
 
 
-.main__tables-container{
+.main__tables{
     display: flex;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
@@ -167,7 +167,7 @@ main {
 }
 
 
-.main__tables-container__currency, .main__tables-container__commissions{
+.main__tableCurrency, .main__tabletCommissions{
     width: 70%;
     min-width: 235px;
     max-width: 500px;
@@ -177,7 +177,7 @@ main {
     font-family: "Inter", sans-serif;
 }
 
-.main__tables-container__currency .main__tables-container__currency__tittle{
+.main__tableCurrency .currency__title{
     /* margin-right: 100%; */
     margin-bottom: 15px;
     font-size: 1.8rem;
@@ -186,7 +186,7 @@ main {
     color: var(--color-primary);
 }
 
-.main__tables-container__currency__table{
+.currency__table{
     width: 90%;
     min-width: 230px;
     max-width: 300px;
@@ -194,12 +194,12 @@ main {
     margin: 0 auto;
 }
 
-.main__tables-container__currency__table table{
+.table{
     width: 100%;
     height: 100%;
 }
 
-.main__tables-container__currency__table td, .main__tables-container__commissions__table{
+.currency__table td, .commissions__tableContainer{
     width: 50%;
     font-size: 1.6rem;
     font-weight: 500;
@@ -208,7 +208,7 @@ main {
     background-color: var(--color-light);
 }
 
-.table__right .table__tr--below{
+.table__column--right .table__column--below{
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -218,7 +218,7 @@ main {
     background-position: center; /*posiciona la imagen de en el centro del elemento contenedor.*/
 }
 
-.table__right .table__tr--above{
+.table__column--right .table__column--above{
     /* display: inline-block; */
     width: 15px;
     height: 15px;
@@ -229,23 +229,23 @@ main {
     background-repeat: no-repeat;
 }
 
-.main__tables-container__currency__table .table__tr--top-left{
+.currency__table .table__column--topLeft{
     border-radius: 15px 0 0 0;
 }
 
-.main__tables-container__currency__table .table__tr--top-right{
+.currency__table .table__column--topRight{
     border-radius: 0 15px 0 0;
 }
 
-.main__tables-container__currency__table .table__tr--bottom-left{
+.currency__table .table__column--bottomLeft{
     border-radius: 0 0 0 15px;
 }
 
-.main__tables-container__currency__table .table__tr--bottom-right{
+.currency__table .table__column--bottomRight{
     border-radius: 0 0 15px 0;
 }
 
-.main__tables-container__currency__date{
+.currency__date{
     width: 190px;
     height: 30px;
     margin: 0 auto;
@@ -255,14 +255,14 @@ main {
     border-radius: 8px;
 }
 
-.main__tables-container__currency__date p{
+.currency__text{
     font-size: 1rem;
     line-height: 1.5rem;
     color: var(--color-dark-warm);
 }
 
 
-.main__tables-container__commissions .main__tables-container__commisions__tittle{
+.main__tabletCommissions .commisions__title{
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
@@ -270,7 +270,7 @@ main {
     color: var(--color-secondary);
 }
 
-.main__tables-container__commissions__table{
+.commissions__tableContainer{
     /* background-color: #f7931a; */
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -284,27 +284,27 @@ main {
     margin: 0 auto;
 }
 
-.main__tables-container__commissions__table span {
+.commissions__tableContainer span{
     /* Centra vertical y horizontalmente el contenido */
     display: flex;
     justify-content: center; /*eje horizontal*/
     align-items: center; /*eje vertical*/
 }
 
-.main__tables-container__commissions__table .commisions__table-col-1{
-    border-bottom: 3px solid var(--color-background); /* Borde inferior de las celdas */
+.commisions__table--colOne{
+    border-bottom: 3px solid var(--color-background); /*Borde inferior de las celdas */
     border-right: 3px solid var(--color-background); /* Borde derecho de las celdas */
 }
 
-.main__tables-container__commissions__table .commisions__table-col-2{
+.commisions__table-colTwo{
     border-bottom: 3px solid var(--color-background); /* Borde inferior de las celdas */
 }
 
-.main__tables-container__commissions__table .commisions__table-col-1-end{
+.commisions__table--colOneEnd{
     border-right: 3px solid var(--color-background); /* Borde derecho de las celdas */
 }
 
-.main__tables-container__commisions__date{
+.commisions__date{
     width: 190px;
     height: 30px;
     margin: 0 auto;
@@ -314,7 +314,7 @@ main {
     border-radius: 8px;
 }
 
-.main__product__detail{
+.main__product{
     position: relative;
     width: 100%;
     min-width: 320px;
@@ -323,7 +323,7 @@ main {
     background-color: var(--color-dark-warm);
 }
 
-.main__product__detail__batata-logo{
+.product__batataLogo{
     position: absolute;
     width: 40px;
     height: 25px;
@@ -336,7 +336,7 @@ main {
     background-image: url("./assets/icons/batata.svg");
 }
 
-.main__product__detail__title{
+.product__text{
     width: 90%;
     min-width: 288px;
     height: auto;
@@ -344,7 +344,7 @@ main {
     text-align: center;
 }
 
-.main__product__detail__title h2{
+.product__title{
     margin-bottom: 20px;
     font-size: 2.4rem;
     font-weight: bold;
@@ -352,7 +352,7 @@ main {
     color: var(--color-light);
 }
 
-.main__product__detail__title p{
+.product__paragraph{
     margin-bottom: 20px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -360,7 +360,7 @@ main {
     color: #808080;
 }
 
-.main__product__cards-container__product-detail-card{
+.card{
     width: 90%;
     min-width: 288px;
     max-width: 400px;
@@ -372,7 +372,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
 
-.main__product__cards-container__product-detail-card__icon{
+.card__icon {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -382,23 +382,23 @@ main {
     background-repeat: no-repeat;
 }
 
-.main__product__cards-container__product-detail-card .clock{
+.card__icon--clock{
     background-image: url("./assets/icons/clock.svg");
 }
 
-.main__product__cards-container__product-detail-card .eye{
+.card__icon--eye{
     background-image: url("./assets/icons/eye.svg");
 }
 
-.main__product__cards-container__product-detail-card .dollar-sign{
+.card__icon---sign{
     background-image: url("./assets/icons/dollar-sign.svg");
 }
 
-.main__product__cards-container__product-detail-card .check-circle{
+.card__icon--circle{
     background-image: url("./assets/icons/check-circle.svg");
 }
 
-.main__product__cards-container__product-detail-card-title{
+.card__title{
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
@@ -406,14 +406,14 @@ main {
     color: var(--color-light);
 }
 
-.main__product__cards-container__product-detail-card-body{
+.card__body{
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
     color: #808080;
 }
 
-.main__bitcoin-img-container{
+.bitcoin__imgContainer{
     width: 100%;
     min-width: 320px;
     height: 20vh;
@@ -424,7 +424,7 @@ main {
     text-align: center;
 }
 
-.main__bitcoin-img-container h2{
+.bitcoin__title{
     padding-top: 60px;
     font-size: 2.4rem;
     font-weight: bold;
@@ -433,15 +433,14 @@ main {
     
 }
 
-
-.main__plans_container{
+.main__plans{
     width: 100%;
     min-width: 320px;
     padding-bottom: 70px;
     text-align: center
 }
 
-.main__plans_container__title{
+.plans__text{
     width: 90%;
     min-width: 288px;
     height: auto;
@@ -449,7 +448,7 @@ main {
     margin-bottom: 50px;
 }
 
-.main__plans_container__title h2{
+.plans__title{
     padding-top: 50px;
     font-size: 2.2rem;
     font-weight: bold;
@@ -457,7 +456,7 @@ main {
     color: var(--color-dark);
 }
 
-.main__plans_container__title p{
+.plans__paragraph{
     padding-top: 30px;
     font-size: 1.2rem;
     font-weight: 500;
@@ -465,7 +464,7 @@ main {
     color: #757575;
 }
 
-.main__plans_container__slider{
+.plans__slider{
     display: flex;
     height: 316px;
     overflow-x: scroll;
@@ -473,7 +472,7 @@ main {
     scroll-snap-type: x proximity;
 }
 
-.main__plans_container__slider__card{
+.slider__card{
     position: relative;
     scroll-snap-align: center;
     width: 70%;
@@ -487,7 +486,7 @@ main {
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
 
-.main__plans_container__slider__card__type {
+.card__plan {
     position: absolute;
     width: 100px;
     height: 31px;
@@ -504,7 +503,7 @@ main {
     color: var(--color-light);
 }
 
-.main__plans_container__slider__card__plan-info-container__title{
+.card__containerTitle{
     padding-top: 30px;
     font-size: 1.4rem;
     font-weight: bold;
@@ -512,7 +511,7 @@ main {
     color: black;
 }
 
-.main__plans_container__slider__card__plan-info-container__price{
+.card__price{
     padding: 5px 0;
     font-size: 5.2rem;
     font-weight: bold;
@@ -520,19 +519,19 @@ main {
     color: black;
 }
 
-.main__plans_container__slider__card__plan-info-container__price span{
+.card__price span{
     margin-right: 2px;
     font-size: 1.2rem;
     font-weight: 300;
     vertical-align: 25px;
 }
 
-.main__plans_container__slider__card__plan-info-container__saving{
+.card__saving{
     font-size: 1.2rem;
     color: #757575;
 }
 
-.main__plans_container__slider__card__plan-info-container__ca{
+.card__buttom{
     width: 150px;
     height: 48px;
     margin-top: 20px;
@@ -547,7 +546,7 @@ main {
     
 }
 
-.main__plans_container__slider__card__plan-info-container__ca span{
+.card__buttom span{
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -557,59 +556,59 @@ main {
 
 /* Segunda tarjeta  */
 
-.main__plans_container__slider__card__type.basic {
+.card__plan__basic {
     background-color: var(--color-secondary);
 }
 
 /* Tercera tarjeta */
 
-.main__plans_container__slider__card.limited {
+.slider__card--limited {
     background-color: var(--color-dark-warm);
 }
 
-.main__plans_container__slider__card__type.limited {
+.card__plan__limited {
     background-color: var(--color-light-darker);
 }
 
-.main__plans_container__slider__card__plan-info-container__title.limited {
+.card__containerTitle--limited {
     color: var(--color-light);
 }
 
-.main__plans_container__slider__card__plan-info-container__price.limited {
+.card__price--limited {
     color: var(--color-light);
 }
 
-.main__plans_container__slider__card__plan-info-container__ca.limited {
+.card__saving__limited {
     background-color: var(--color-dark-warm);
     color: var(--color-light);
 }
 
-footer{
+.footer{
     display: flex;
     width: 100%;
     height: 150px;
     background-color: var(--color-primary);
 } 
 
-footer section{
+.footer__list, .footer__containerImg{
     display: flex;
     width: 50%;
     justify-content: center;
     align-items: center;
 }
 
-footer .footer__left ul {
+.list__unlist {
     font-size: 1.4rem;
     font-weight: 500px;
     line-height: 1.8rem;
     list-style: none;
 }
 
-.footer__left li {
+.footer__item{
     margin: 10px 0;
 }
 
-.footer__left a {
+.footer__item a {
     text-decoration: none;
     color: var(--color-background);
 }

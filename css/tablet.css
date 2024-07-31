@@ -1,17 +1,17 @@
-.main__tables-container{
+.main__tables{
     margin: 0 auto;
     width: 930px;
     overflow-x: auto;   
 }
 
-.main__product__cards-container{
+.product__cards{
     display: flex;
     flex-wrap: wrap;
     width: 930px;
     margin: 0 auto;
 }
 
-.main__plans_container__slider{
+.plans__slider{
     justify-content: center;
     overflow-x: auto;
 }
